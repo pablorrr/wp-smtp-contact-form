@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="84836a64-07ce-456b-9b4b-040db663bc68" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1pmkvFMRIYFfbQ5yRFVqJU8d8n5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.php.frameworks" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\nonmulti\wp-content\plugins\wp-smtp-contact-form" />
+      <recent name="C:\wamp64\www\nonmulti\wp-content\plugins" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\nonmulti\wp-content\plugins\wp-smtp-contact-form\inc\forms" />
+      <recent name="C:\wamp64\www\nonmulti\wp-content\plugins\wp-smtp-contact-form\inc" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="84836a64-07ce-456b-9b4b-040db663bc68" name="Default Changelist" comment="" />
+      <created>1615795881260</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615795881260</updated>
+      <workItem from="1615795882447" duration="27229000" />
+      <workItem from="1616480793056" duration="1350000" />
+      <workItem from="1616485609385" duration="25520000" />
+      <workItem from="1617007669318" duration="8000" />
+      <workItem from="1617010002257" duration="4071000" />
+      <workItem from="1617114898340" duration="828000" />
+      <workItem from="1617169975988" duration="1604000" />
+      <workItem from="1617193294287" duration="1317000" />
+    </task>
+    <task id="LOCAL-00001" summary="first good OOP implementation with correct sending email">
+      <created>1615805246790</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615805246790</updated>
+    </task>
+    <task id="LOCAL-00002" summary="correct  singleton implementation, namespace usage and register uninstall plugin">
+      <created>1615808381185</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1615808381185</updated>
+    </task>
+    <task id="LOCAL-00003" summary="correct add action link in procedural way">
+      <created>1615811639965</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615811639965</updated>
+    </task>
+    <task id="LOCAL-00004" summary="first good action link impl">
+      <created>1615812858966</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615812858966</updated>
+    </task>
+    <task id="LOCAL-00005" summary="action link in OOP correct">
+      <created>1615814510228</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1615814510228</updated>
+    </task>
+    <task id="LOCAL-00006" summary="skeleton for controller and model classes">
+      <created>1615820050855</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1615820050855</updated>
+    </task>
+    <task id="LOCAL-00007" summary="FIRST PROPRER MODEL AND KONTROLLER IMPLENATATION">
+      <created>1615822841552</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1615822841552</updated>
+    </task>
+    <task id="LOCAL-00008" summary="failed transport code to view">
+      <created>1615825391044</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1615825391044</updated>
+    </task>
+    <task id="LOCAL-00009" summary="failed transport code to view">
+      <created>1615826004282</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1615826004282</updated>
+    </task>
+    <task id="LOCAL-00010" summary="failed transport code to view2">
+      <created>1616487740483</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1616487740483</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add composer vendor ps4">
+      <created>1616488059811</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1616488059811</updated>
+    </task>
+    <task id="LOCAL-00012" summary="relocate php code to form files in view succesful">
+      <created>1616494638387</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1616494638387</updated>
+    </task>
+    <task id="LOCAL-00013" summary="create form php and relocate">
+      <created>1616499283371</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1616499283371</updated>
+    </task>
+    <task id="LOCAL-00014" summary="finish relocate forms to view">
+      <created>1616502331088</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1616502331088</updated>
+    </task>
+    <task id="LOCAL-00015" summary="shortcode first implementataion">
+      <created>1616508044352</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1616508044352</updated>
+    </task>
+    <task id="LOCAL-00016" summary="first correct send message from front end">
+      <created>1616510110376</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1616510110376</updated>
+    </task>
+    <task id="LOCAL-00017" summary="finish work">
+      <created>1616511235250</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1616511235250</updated>
+    </task>
+    <task id="LOCAL-00018" summary="separate form in 2 files">
+      <created>1617014792504</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1617014792504</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add Updater class">
+      <created>1617193340501</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1617193340501</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add Updater class">
+      <created>1617193494201</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1617193494201</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first good OOP implementation with correct sending email" />
+    <MESSAGE value="correct  singleton implementation, namespace usage and register uninstall plugin" />
+    <MESSAGE value="correct add action link in procedural way" />
+    <MESSAGE value="first good action link impl" />
+    <MESSAGE value="action link in OOP correct" />
+    <MESSAGE value="skeleton for controller and model classes" />
+    <MESSAGE value="FIRST PROPRER MODEL AND KONTROLLER IMPLENATATION" />
+    <MESSAGE value="failed transport code to view" />
+    <MESSAGE value="failed transport code to view2" />
+    <MESSAGE value="add composer vendor ps4" />
+    <MESSAGE value="relocate php code to form files in view succesful" />
+    <MESSAGE value="create form php and relocate" />
+    <MESSAGE value="finish relocate forms to view" />
+    <MESSAGE value="shortcode first implementataion" />
+    <MESSAGE value="first correct send message from front end" />
+    <MESSAGE value="finish work" />
+    <MESSAGE value="separate form in 2 files" />
+    <MESSAGE value="add Updater class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Updater class" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2471" y="127" key="CommitChangelistDialog2" timestamp="1617193493355">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2471" y="127" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617193493355" />
+    <state x="2660" y="295" key="FileChooserDialogImpl" timestamp="1617011669376">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2660" y="295" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617011669376" />
+    <state x="2714" y="463" key="NewPhpFileDialog" timestamp="1617013263214">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2714" y="463" key="NewPhpFileDialog/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617013263214" />
+    <state x="2381" y="182" key="SettingsEditor" timestamp="1617011720795">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2381" y="182" key="SettingsEditor/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617011720795" />
+    <state x="2472" y="273" key="Vcs.Push.Dialog.v2" timestamp="1617193500030">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2472" y="273" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617193500030" />
+    <state x="2432" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1617170005641">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="341" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1920.1080@0.0.1280.680" timestamp="1617010002782" />
+    <state x="2432" y="260" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617170005641" />
+  </component>
+  <component name="WordPressConfiguration" enabled="true">
+    <wordpressPath>C:\wamp64\www\nonmulti</wordpressPath>
+  </component>
+</project>

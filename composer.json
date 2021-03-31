@@ -1,0 +1,24 @@
+{
+    "name": "wp-smtp-contact-form/wp-smtp-contact-form",
+    "description": "send email with smtp and shortcode",
+    "type": "project",
+    "authors": [
+        {
+            "name": "pablozzz",
+            "email": "pablozz451@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+
+    "require": {},
+	
+	
+    "autoload": {
+        "psr-4": {
+            "Inc\\": "inc/",
+            "Model\\": "model/",
+            "Controller\\": "controller/"
+        }
+    }
+
+}
