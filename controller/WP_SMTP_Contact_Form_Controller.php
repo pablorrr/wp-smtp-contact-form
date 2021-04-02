@@ -38,12 +38,19 @@ class WP_SMTP_Contact_Form_Controller
     public function swpsmtpcf_admin_default_setup()
     {
         add_menu_page(
-            __('WP SMTP CF',
-                'wp_smtp_cf'),
+            __('WP SMTP CF', 'wp_smtp_cf'),
             __('WP SMTP CF', 'wp_smtp_cf'),
             'manage_options',
             'swpsmtpcf_settings',
             [$this, 'swpsmtpcf_settings']);
+
+        add_submenu_page(
+            'swpsmtpcf_settings',
+            __('WP SMTP test', 'wp_smtp_cf'),
+            __('WP SMTP test', 'wp_smtp_cf'),
+            'manage_options',
+            'swpsmtpcf-test-email',
+            [$this, 'swpsmtpcf_test']);
     }
 
 
@@ -115,9 +122,16 @@ class WP_SMTP_Contact_Form_Controller
      */
 
     public function swpsmtpcf_settings()
-    {//todo: separate forms to two different pages (use layout and render forms from paste link advanced)
+    {
         require_once trailingslashit(plugin_dir_path(__DIR__)) . 'view/settings-form.php';
+
+    }
+
+    public function swpsmtpcf_test()
+    {
+//todo: add messege has beeen send succesfully, view code line:208
         require_once trailingslashit(plugin_dir_path(__DIR__)) . 'view/test-form.php';
+
     }
 
 
