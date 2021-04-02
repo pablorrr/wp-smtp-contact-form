@@ -8,6 +8,13 @@
  * Description: SMTP Settings and send email from any page via shortcode
  */
 
+/**
+ * this plugin is based on Easy WordPress SMTP
+ * https://wp-ecommerce.net/easy-wordpress-smtp-send-emails-from-your-wordpress-site-using-a-smtp-server-2197
+ * License: GPLv2 or later
+ *License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ */
+
 
 use Inc\WP_SMTP_Contact_Form;
 use Inc\WP_SMTP_Contact_Form_Updater;
