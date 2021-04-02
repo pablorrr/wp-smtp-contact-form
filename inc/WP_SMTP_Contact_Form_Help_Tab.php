@@ -32,33 +32,38 @@ class WP_SMTP_Contact_Form_Help_Tab
     public function WP_SMTP_Contact_Form_help_tab()
     {
         $screen = get_current_screen();
-        $text = 'Afterwards you save your settings, dont forget to paste this shortcode: [geocoder_map]
- in your posts or page. To see results of your changes on a map you must refresh website before.';
+        $text_one = '1st step
+Check your SMTP settings with your hosting provider and enter them into the form in the first link of the plugin.
+Step 2
+Save the settings
+ Step 3. Go to edit any post or page and paste the following shortcode: [WP_SMTP_Contact_Form] and save the changes.
+Cool!! Now you can send email from anywhere on your website';
+
+        $text_two = 'Before first use, test your SMTP settings in the second plugin form in the second plugin link -WP SMTP test';
         // Add my_help_tab if current screen is My Admin Page
         $screen->add_help_tab(array(
             'id' => 'help_tab',
-            'title' => __('Welcome', 'geocoder-map'),
-            'content' => '<p>' . __('Thx you have choosen my plugin', 'geocoder-map') . '</p>',
+            'title' => __('Welcome', 'wp_smtp_cf'),
+            'content' => '<p>' . __('Thanks for chosen my plugin ') . '</p>',
         ));
 
         $screen->add_help_tab(array(
             'id' => 'help_tab_two',
-            'title' => __('How to use plugin', 'geocoder-map'),
-            'content' => '<p>' . __('Before you apply your settings please paste your GM api key', 'simple-google-map-plugin') . '</p>',
+            'title' => __('How to use plugin', 'wp_smtp_cf'),
+            'content' => '<p>' . $text_one . '</p>',
 
         ));
         $screen->add_help_tab(array(
             'id' => 'help_tab_three',
-            'title' => __('Another clues', 'geocoder-map'),
-            'content' => '<p>' . __($text, 'geocoder-map') . '</p>',
+            'title' => __('Another clues', 'wp_smtp_cf'),
+            'content' => '<p>' . __($text_two, 'wp_smtp_cf') . '</p>',
         ));
 
         $screen->set_help_sidebar(
-            '<p><strong>' . __('Quick Links', 'geocoder-map') . '</strong></p>' .
-            '<p><a href="http://websitecreator.pl" target="_blank">' . __('Author website', 'geocoder-map') . '
-			</a></p>' .
-            '<p><a href="https://www.google.pl/maps" target="_blank">Google Maps</a></p>' .
-            '<p><a href="https://developers.google.com/maps/documentation/javascript/get-api-key" target="_blank">' . __('Obtain Geoogle Map key link', 'geocoder-map') . '</a></p>'
+            '<p><strong>' . __('Quick Links', 'wp_smtp_cf') . '</strong></p>' .
+            '<p><a href="http://websitecreator.cba.pl" target="_blank">' . __('Author website', 'wp_smtp_cf') . '
+			</a></p>'
+
         );
     }
 

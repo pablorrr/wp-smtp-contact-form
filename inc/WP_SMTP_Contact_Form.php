@@ -46,7 +46,7 @@ if (!class_exists('WP_SMTP_Contact_Form')):
         private function actions()
         {
             add_action('plugins_loaded', array($this, 'init'));
-            WP_SMTP_Contact_Form_Shortcode::instance();
+           // WP_SMTP_Contact_Form_Shortcode::instance();
 
         }
 
@@ -54,6 +54,8 @@ if (!class_exists('WP_SMTP_Contact_Form')):
         public function init()
         {
             $this->controller = new WP_SMTP_Contact_Form_Controller();
+            //todo: check if it works : shortcode
+            WP_SMTP_Contact_Form_Shortcode::instance();
 
         }
 

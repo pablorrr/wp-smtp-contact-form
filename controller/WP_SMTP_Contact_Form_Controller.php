@@ -2,6 +2,7 @@
 
 namespace Controller;
 
+use Inc\WP_SMTP_Contact_Form;
 use Inc\WP_SMTP_Contact_Form_Help_Tab;
 use Model\WP_SMTP_Contact_Form_Model;
 use PHPMailer\PHPMailer\PHPMailer;
@@ -41,7 +42,7 @@ class WP_SMTP_Contact_Form_Controller
 
     public function swpsmtpcf_admin_default_setup()
     {
-        $this->help_tab = WP_SMTP_Contact_Form_Help_Tab::instance();
+       $this->help_tab = WP_SMTP_Contact_Form_Help_Tab::instance();
 
         $WP_SMTP_Contact_Form_help_tab = add_menu_page(
             __('WP SMTP CF', 'wp_smtp_cf'),
