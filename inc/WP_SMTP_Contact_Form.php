@@ -5,13 +5,6 @@ namespace Inc;
 use Controller\WP_SMTP_Contact_Form_Controller;
 
 
-
-
-/**
- * Add menu and submenu.
- * @return void
- */
-
 //TODO: ADD '5.4.99' compare version if lower add admin notice and close plugin check plugin from WC
 if (!class_exists('WP_SMTP_Contact_Form')):
     class  WP_SMTP_Contact_Form
@@ -22,7 +15,6 @@ if (!class_exists('WP_SMTP_Contact_Form')):
          * Singleton on WP Plugin implementation inspired with
          * https://gist.github.com/goncaloneves/e0f07a8db17b06c2f968
          */
-
 
         private static $_instance;
 
@@ -55,6 +47,7 @@ if (!class_exists('WP_SMTP_Contact_Form')):
         {
             add_action('plugins_loaded', array($this, 'init'));
             WP_SMTP_Contact_Form_Shortcode::instance();
+
         }
 
 

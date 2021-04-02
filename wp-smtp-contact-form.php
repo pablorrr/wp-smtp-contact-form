@@ -24,11 +24,9 @@ function Run_WP_SMTP_Contact_Form(): WP_SMTP_Contact_Form
 }
 
 Run_WP_SMTP_Contact_Form();
-//todo:: integrate versioning mechanism with ProductCreator_Updater classs
+//todo:: integrate versioning mechanism with ProductCreator_Updater classs, addd to on_activate hook
 //Run WP Updater for plugin version
 $updater = new WP_SMTP_Contact_Form_Updater(__FILE__);
 $updater->set_username('pablorrr');
 $updater->set_repository('wp-smtp-contact-form');
 $updater->initialize();
-
-

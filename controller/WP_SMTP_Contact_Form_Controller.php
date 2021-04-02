@@ -2,6 +2,7 @@
 
 namespace Controller;
 
+use Inc\WP_SMTP_Contact_Form_Help_Tab;
 use Model\WP_SMTP_Contact_Form_Model;
 use PHPMailer\PHPMailer\PHPMailer;
 
@@ -10,9 +11,10 @@ class WP_SMTP_Contact_Form_Controller
 {
     //private static $_instance;
     private $model;
+    private $help_tab;
     private static $plug_file = 'wp-smtp-contact-form.php';
     private static $plug_action_name;
-
+// WP_SMTP_Contact_Form_Help_Tab::instance();
 
     /**
      * init plugin when all wp plugins loaded
@@ -25,6 +27,8 @@ class WP_SMTP_Contact_Form_Controller
         add_action('phpmailer_init', array($this, 'swpsmtpcf_init_smtp'));
         add_action('admin_menu', array($this, 'swpsmtpcf_admin_default_setup'));
         $this->model = new WP_SMTP_Contact_Form_Model();
+
+
         add_action('admin_enqueue_scripts', array($this, 'swpsmtpcf_admin_head'));
         add_action('admin_notices', array($this, 'swpsmtpcf_admin_notice'));
     }
@@ -37,12 +41,17 @@ class WP_SMTP_Contact_Form_Controller
 
     public function swpsmtpcf_admin_default_setup()
     {
-        add_menu_page(
+        $this->help_tab = WP_SMTP_Contact_Form_Help_Tab::instance();
+
+        $WP_SMTP_Contact_Form_help_tab = add_menu_page(
             __('WP SMTP CF', 'wp_smtp_cf'),
             __('WP SMTP CF', 'wp_smtp_cf'),
             'manage_options',
             'swpsmtpcf_settings',
             [$this, 'swpsmtpcf_settings']);
+
+        add_action('load-' . $WP_SMTP_Contact_Form_help_tab,
+            [$this->help_tab, 'WP_SMTP_Contact_Form_help_tab']);
 
         add_submenu_page(
             'swpsmtpcf_settings',
@@ -182,7 +191,8 @@ class WP_SMTP_Contact_Form_Controller
                 $mail->SMTPSecure = $swpsmtpcf_options['smtpcf_settings']['type_encryption'];
             }
 
-            /* PHPMailer 5.2.10 introduced this option. However, this might cause issues if the server is advertising TLS with an invalid certificate. */
+            /* PHPMailer 5.2.10 introduced this option.
+            However, this might cause issues if the server is advertising TLS with an invalid certificate. */
             $mail->SMTPAutoTLS = false;
 
             /* Set the other options */

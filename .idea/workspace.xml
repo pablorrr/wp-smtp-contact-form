@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84836a64-07ce-456b-9b4b-040db663bc68" name="Default Changelist" comment="add Updater class">
+    <list default="true" id="84836a64-07ce-456b-9b4b-040db663bc68" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form_Help_Tab.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/WP_SMTP_Contact_Form_Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/WP_SMTP_Contact_Form_Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-smtp-contact-form.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-smtp-contact-form.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +77,18 @@
       <recent name="C:\wamp64\www\nonmulti\wp-content\plugins\wp-smtp-contact-form\inc" />
     </key>
   </component>
+  <component name="SearchEverywhereConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="RunConfigurationsSEContributor" />
+      <filtered-out-file-type name="ActionSearchEverywhereContributor" />
+      <filtered-out-file-type name="YAMLKeysSearchEverywhereContributor" />
+      <filtered-out-file-type name="TopHitSEContributor" />
+      <filtered-out-file-type name="RecentFilesSEContributor" />
+      <filtered-out-file-type name="ClassSearchEverywhereContributor" />
+      <filtered-out-file-type name="FileSearchEverywhereContributor" />
+      <filtered-out-file-type name="SymbolSearchEverywhereContributor" />
+    </file-type-list>
+  </component>
   <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
@@ -93,7 +108,7 @@
       <workItem from="1617114898340" duration="828000" />
       <workItem from="1617169975988" duration="1604000" />
       <workItem from="1617193294287" duration="2606000" />
-      <workItem from="1617348128843" duration="2750000" />
+      <workItem from="1617348128843" duration="8373000" />
     </task>
     <task id="LOCAL-00001" summary="first good OOP implementation with correct sending email">
       <created>1615805246790</created>
@@ -235,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617193494201</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add submenu with test form email">
+      <created>1617352483595</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1617352483595</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,17 +295,18 @@
     <MESSAGE value="finish work" />
     <MESSAGE value="separate form in 2 files" />
     <MESSAGE value="add Updater class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Updater class" />
+    <MESSAGE value="add submenu with test form email" />
+    <option name="LAST_COMMIT_MESSAGE" value="add submenu with test form email" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1920" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1617195806015">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="1920" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617195806015" />
-    <state x="2471" y="127" key="CommitChangelistDialog2" timestamp="1617195922846">
+    <state x="2471" y="127" key="CommitChangelistDialog2" timestamp="1617352482334">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2471" y="127" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617195922846" />
+    <state x="2471" y="127" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617352482334" />
     <state x="493" y="164" key="FileChooserDialogImpl" timestamp="1617350286613">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -293,10 +316,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2722" y="433" key="Github.ShareDialog/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617194902615" />
-    <state x="2629" y="354" key="NewPhpClassDialog" timestamp="1617195611854">
+    <state x="2629" y="354" key="NewPhpClassDialog" timestamp="1617356009299">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2629" y="354" key="NewPhpClassDialog/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617195611854" />
+    <state x="2629" y="354" key="NewPhpClassDialog/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617356009299" />
     <state x="2714" y="463" key="NewPhpFileDialog" timestamp="1617013263214">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -306,15 +329,23 @@
     </state>
     <state x="284" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1080@0.0.1280.680" timestamp="1617350295203" />
     <state x="2381" y="182" key="SettingsEditor/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617011720795" />
-    <state x="2472" y="273" key="Vcs.Push.Dialog.v2" timestamp="1617193500030">
+    <state width="254" height="198" key="ShowFilterAction_Filter_Popup" timestamp="1617354249436">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2472" y="273" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617193500030" />
+    <state width="254" height="198" key="ShowFilterAction_Filter_Popup/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617354249436" />
+    <state x="2472" y="273" key="Vcs.Push.Dialog.v2" timestamp="1617352489411">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2472" y="273" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617352489411" />
     <state x="2432" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1617170005641">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="341" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1920.1080@0.0.1280.680" timestamp="1617010002782" />
     <state x="2432" y="260" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617170005641" />
+    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1617354249436">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617354249436" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>C:\wamp64\www\nonmulti</wordpressPath>
