@@ -2,20 +2,30 @@
 
 namespace Controller;
 
-use Inc\WP_SMTP_Contact_Form;
+
 use Inc\WP_SMTP_Contact_Form_Help_Tab;
 use Model\WP_SMTP_Contact_Form_Model;
 use PHPMailer\PHPMailer\PHPMailer;
 
-
-class WP_SMTP_Contact_Form_Controller
+interface WP_SMTP_CF
 {
-    //private static $_instance;
+
+    public function swpsmtpcf_send_uninstall();
+    public function swpsmtpcf_plugin_action_links($actions);
+    public function swpsmtpcf_init_smtp(&$phpmailer);
+    public function swpsmtpcf_admin_default_setup();
+    public function swpsmtpcf_admin_head();
+    public function swpsmtpcf_admin_notice();
+
+}
+
+class WP_SMTP_Contact_Form_Controller implements WP_SMTP_CF
+{
+
     private $model;
     private $help_tab;
     private static $plug_file = 'wp-smtp-contact-form.php';
     private static $plug_action_name;
-// WP_SMTP_Contact_Form_Help_Tab::instance();
 
     /**
      * init plugin when all wp plugins loaded
@@ -28,8 +38,6 @@ class WP_SMTP_Contact_Form_Controller
         add_action('phpmailer_init', array($this, 'swpsmtpcf_init_smtp'));
         add_action('admin_menu', array($this, 'swpsmtpcf_admin_default_setup'));
         $this->model = new WP_SMTP_Contact_Form_Model();
-
-
         add_action('admin_enqueue_scripts', array($this, 'swpsmtpcf_admin_head'));
         add_action('admin_notices', array($this, 'swpsmtpcf_admin_notice'));
     }
@@ -42,7 +50,7 @@ class WP_SMTP_Contact_Form_Controller
 
     public function swpsmtpcf_admin_default_setup()
     {
-       $this->help_tab = WP_SMTP_Contact_Form_Help_Tab::instance();
+        $this->help_tab = WP_SMTP_Contact_Form_Help_Tab::instance();
 
         $WP_SMTP_Contact_Form_help_tab = add_menu_page(
             __('WP SMTP CF', 'wp_smtp_cf'),
