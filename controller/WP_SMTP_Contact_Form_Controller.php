@@ -19,7 +19,7 @@ interface WP_SMTP_CF
 
 }
 
-class WP_SMTP_Contact_Form_Controller implements WP_SMTP_CF
+final class WP_SMTP_Contact_Form_Controller implements WP_SMTP_CF
 {
 
     private $model;

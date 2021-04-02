@@ -4,7 +4,6 @@
     <list default="true" id="84836a64-07ce-456b-9b4b-040db663bc68" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/WP_SMTP_Contact_Form_Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/WP_SMTP_Contact_Form_Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +105,7 @@
       <workItem from="1617114898340" duration="828000" />
       <workItem from="1617169975988" duration="1604000" />
       <workItem from="1617193294287" duration="2606000" />
-      <workItem from="1617348128843" duration="12125000" />
+      <workItem from="1617348128843" duration="12681000" />
     </task>
     <task id="LOCAL-00001" summary="first good OOP implementation with correct sending email">
       <created>1615805246790</created>
@@ -276,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617360206592</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="introduce interface">
+      <created>1617364231925</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1617364231925</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,17 +324,18 @@
     <MESSAGE value="add help tab - first proprer try usage" />
     <MESSAGE value="add help tab - text correction" />
     <MESSAGE value="correct main plufin comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="correct main plufin comment" />
+    <MESSAGE value="introduce interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="introduce interface" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1920" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1617195806015">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="1920" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617195806015" />
-    <state x="2471" y="127" key="CommitChangelistDialog2" timestamp="1617360205717">
+    <state x="2471" y="127" key="CommitChangelistDialog2" timestamp="1617364231052">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2471" y="127" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617360205717" />
+    <state x="2471" y="127" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617364231052" />
     <state x="493" y="164" key="FileChooserDialogImpl" timestamp="1617350286613">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -355,10 +362,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="254" height="198" key="ShowFilterAction_Filter_Popup/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617354249436" />
-    <state x="2472" y="273" key="Vcs.Push.Dialog.v2" timestamp="1617360209934">
+    <state x="2472" y="273" key="Vcs.Push.Dialog.v2" timestamp="1617364236374">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2472" y="273" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617360209934" />
+    <state x="2472" y="273" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617364236374" />
     <state x="2432" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1617170005641">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
