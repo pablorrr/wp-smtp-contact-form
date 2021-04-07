@@ -17,6 +17,8 @@ class WP_SMTP_Contact_Form_Logger
 
 //todo:: cretae  log file from PHP praogramatically
     private static $_instance;
+    private static $dir_sep;
+
 
     /**
      * @return WP_SMTP_Contact_Form_Logger
@@ -37,6 +39,8 @@ class WP_SMTP_Contact_Form_Logger
      */
     public function __construct()
     {
+        self::$dir_sep = DIRECTORY_SEPARATOR;
+
         add_action('shutdown', [$this, 'WP_SMTP_CF_query_logger']);
         add_action('shutdown', [$this, 'WP_SMTP_CF_log']);
     }
@@ -45,16 +49,19 @@ class WP_SMTP_Contact_Form_Logger
      * @param $message
      * @throws Exception
      *
-     * example- how to use it in code to debug(remeber be sure hook was run before check file!!!)
+     * example- how to use it in code to debug(remeber be sure hook was run before check log file!!!)
      * $logger = WP_SMTP_Contact_Form_Logger::instance();
      * $logger->WP_SMTP_CF_log($plugin_basename);
-     */
+     * */
+
     public function WP_SMTP_CF_log($message)
     {
 
         if (defined('WP_DEBUG') && WP_DEBUG) {
 
-            $file_path = __DIR__ . DIRECTORY_SEPARATOR . 'app_dev.log';
+
+            $file_path = __DIR__ . DIRECTORY_SEPARATOR . 'logs/app_dev.log';
+
 
             $time = date('Y-m-d H:i:s');
 
@@ -67,9 +74,12 @@ class WP_SMTP_Contact_Form_Logger
 
             $log_line = "$time\t{$message}\n";
 
-            if (!file_put_contents($file_path, $log_line, FILE_APPEND)) {
-                throw new Exception("Log file '{$file_path}' cannot be opened or created. Check permissions.");
+            if (file_exists($file_path)) {
+                if (!file_put_contents($file_path, $log_line, FILE_APPEND)) {
+                    throw new Exception("Log file '{$file_path}' cannot be opened or created. Check permissions.");
+                }
             }
+
         }
     }
 
@@ -101,12 +111,15 @@ class WP_SMTP_Contact_Form_Logger
             $footer = '-- DUMP END --';
 
             $file_name = 'sql_dump.log';
-            $file_path = __DIR__ . DIRECTORY_SEPARATOR . $file_name;
+
+
+            $file_path = __DIR__ . self::$dir_sep . 'logs' . self::$dir_sep . $file_name;
 
             $content = $label . "\n\n" . implode("\n\n", $dump) . "\n\n" . $footer . "\n\n";
-
-            if (!file_put_contents($file_path, $content, FILE_APPEND)) {
-                throw new Exception("Log file '{$file_path}' cannot be opened or created. Check permissions.");
+            if (file_exists($file_path)) {
+                if (!file_put_contents($file_path, $content, FILE_APPEND)) {
+                    throw new Exception("Log file '{$file_path}' cannot be opened or created. Check permissions.");
+                }
             }
         }
     }

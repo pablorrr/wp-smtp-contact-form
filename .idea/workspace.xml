@@ -4,7 +4,6 @@
     <list default="true" id="84836a64-07ce-456b-9b4b-040db663bc68" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form_Logger.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form_Logger.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form_Shortcode.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form_Shortcode.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,19 +59,21 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="LOG" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../.." />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\nonmulti\wp-content\plugins\wp-smtp-contact-form\inc\logs" />
+      <recent name="C:\wamp64\www\nonmulti\wp-content\plugins\wp-smtp-contact-form\inc\forms" />
+      <recent name="C:\wamp64\www\nonmulti\wp-content\plugins\wp-smtp-contact-form\inc" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\nonmulti\wp-content\plugins\wp-smtp-contact-form" />
       <recent name="C:\wamp64\www\nonmulti\wp-content\plugins" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\nonmulti\wp-content\plugins\wp-smtp-contact-form\inc\forms" />
-      <recent name="C:\wamp64\www\nonmulti\wp-content\plugins\wp-smtp-contact-form\inc" />
     </key>
   </component>
   <component name="SearchEverywhereConfiguration">
@@ -108,7 +109,7 @@
       <workItem from="1617193294287" duration="2606000" />
       <workItem from="1617348128843" duration="13320000" />
       <workItem from="1617781602294" duration="2634000" />
-      <workItem from="1617784279569" duration="4204000" />
+      <workItem from="1617784279569" duration="6577000" />
     </task>
     <task id="LOCAL-00001" summary="first good OOP implementation with correct sending email">
       <created>1615805246790</created>
@@ -299,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617785451699</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="succesfull testing how to use app-dev.log via var name as arg">
+      <created>1617788762953</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1617788762953</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,7 +327,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="first good OOP implementation with correct sending email" />
     <MESSAGE value="correct  singleton implementation, namespace usage and register uninstall plugin" />
     <MESSAGE value="correct add action link in procedural way" />
     <MESSAGE value="first good action link impl" />
@@ -344,7 +351,8 @@
     <MESSAGE value="introduce interface" />
     <MESSAGE value="add final class" />
     <MESSAGE value="add log file handle" />
-    <option name="LAST_COMMIT_MESSAGE" value="add log file handle" />
+    <MESSAGE value="succesfull testing how to use app-dev.log via var name as arg" />
+    <option name="LAST_COMMIT_MESSAGE" value="succesfull testing how to use app-dev.log via var name as arg" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="198" key="#Log_Highlighting_(ideolog)" timestamp="1617784308783">
@@ -359,10 +367,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2610" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617787035324" />
-    <state x="2471" y="127" key="CommitChangelistDialog2" timestamp="1617785450222">
+    <state x="2471" y="127" key="CommitChangelistDialog2" timestamp="1617788762088">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2471" y="127" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617785450222" />
+    <state x="2471" y="127" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617788762088" />
     <state x="493" y="164" key="FileChooserDialogImpl" timestamp="1617350286613">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -389,10 +397,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="254" height="198" key="ShowFilterAction_Filter_Popup/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617354249436" />
-    <state x="2472" y="273" key="Vcs.Push.Dialog.v2" timestamp="1617788690620">
+    <state x="2472" y="273" key="Vcs.Push.Dialog.v2" timestamp="1617788766855">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2472" y="273" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617788690620" />
+    <state x="2472" y="273" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617788766855" />
     <state x="2432" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1617784279712">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
