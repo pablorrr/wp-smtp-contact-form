@@ -60,7 +60,7 @@ class WP_SMTP_Contact_Form_Logger
         if (defined('WP_DEBUG') && WP_DEBUG) {
 
 
-            $file_path = __DIR__ . DIRECTORY_SEPARATOR . 'logs/app_dev.log';
+            $file_path = __DIR__ . self::$dir_sep . 'logs/app_dev.log';
 
 
             $time = date('Y-m-d H:i:s');
@@ -87,6 +87,8 @@ class WP_SMTP_Contact_Form_Logger
      * @throws Exception
      * make dump all executable queries during refresh plugin page
      */
+
+    //todo:: transient usage
     public function WP_SMTP_CF_query_logger()
     {
         if ((defined('WP_DEBUG') && WP_DEBUG) && (defined('SAVEQUERIES') && SAVEQUERIES)) {

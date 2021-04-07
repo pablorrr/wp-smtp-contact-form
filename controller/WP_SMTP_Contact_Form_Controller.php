@@ -11,10 +11,15 @@ interface WP_SMTP_CF
 {
 
     public function swpsmtpcf_send_uninstall();
+
     public function swpsmtpcf_plugin_action_links($actions);
+
     public function swpsmtpcf_init_smtp(&$phpmailer);
+
     public function swpsmtpcf_admin_default_setup();
+
     public function swpsmtpcf_admin_head();
+
     public function swpsmtpcf_admin_notice();
 
 }
@@ -34,6 +39,7 @@ final class WP_SMTP_Contact_Form_Controller implements WP_SMTP_CF
     public function __construct()
     {
         register_uninstall_hook(plugin_basename(__FILE__), array($this, 'swpsmtpcf_send_uninstall'));
+        register_activation_hook(plugin_basename(__FILE__), array($this, 'swpsmtpcf_run_on_activate'));
         add_filter('plugin_action_links_' . self::swpsmtpcf_return_plug_name(), array($this, 'swpsmtpcf_plugin_action_links'), 10, 2);
         add_action('phpmailer_init', array($this, 'swpsmtpcf_init_smtp'));
         add_action('admin_menu', array($this, 'swpsmtpcf_admin_default_setup'));
@@ -42,6 +48,13 @@ final class WP_SMTP_Contact_Form_Controller implements WP_SMTP_CF
         add_action('admin_notices', array($this, 'swpsmtpcf_admin_notice'));
     }
 
+    public function swpsmtpcf_run_on_activate()
+    {
+        if (!wp_next_scheduled('edu_cron_job')) {
+            wp_schedule_event(time(), 'every15sec', 'edu_cron_job');
+        }
+
+    }
 
     private static function swpsmtpcf_return_plug_name()
     {
@@ -297,7 +310,7 @@ final class WP_SMTP_Contact_Form_Controller implements WP_SMTP_CF
             $credentials_configured = false;
         }
         if (!isset($swpsmtpcf_options['from_name_field']) || empty($swpsmtpcf_options['from_name_field'])) {
-            $credentials_configured = false;;
+            $credentials_configured = false;
         }
         return $credentials_configured;
     }
