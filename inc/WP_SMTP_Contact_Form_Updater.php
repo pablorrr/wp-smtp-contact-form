@@ -190,6 +190,4 @@ class WP_SMTP_Contact_Form_Updater
 
         return $result;
     }
-
-
 }

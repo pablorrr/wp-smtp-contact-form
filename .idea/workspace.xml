@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84836a64-07ce-456b-9b4b-040db663bc68" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form_Logger.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/WP_SMTP_Contact_Form_Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/WP_SMTP_Contact_Form_Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form_Updater.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form_Updater.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +107,9 @@
       <workItem from="1617114898340" duration="828000" />
       <workItem from="1617169975988" duration="1604000" />
       <workItem from="1617193294287" duration="2606000" />
-      <workItem from="1617348128843" duration="12681000" />
+      <workItem from="1617348128843" duration="13320000" />
+      <workItem from="1617781602294" duration="2634000" />
+      <workItem from="1617784279569" duration="1145000" />
     </task>
     <task id="LOCAL-00001" summary="first good OOP implementation with correct sending email">
       <created>1615805246790</created>
@@ -282,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617364231925</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="add final class">
+      <created>1617364751607</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1617364751607</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,17 +336,22 @@
     <MESSAGE value="add help tab - text correction" />
     <MESSAGE value="correct main plufin comment" />
     <MESSAGE value="introduce interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="introduce interface" />
+    <MESSAGE value="add final class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add final class" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2472" y="198" key="#Log_Highlighting_(ideolog)" timestamp="1617784308783">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2472" y="198" key="#Log_Highlighting_(ideolog)/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617784308783" />
     <state x="1920" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1617195806015">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="1920" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617195806015" />
-    <state x="2471" y="127" key="CommitChangelistDialog2" timestamp="1617364231052">
+    <state x="2471" y="127" key="CommitChangelistDialog2" timestamp="1617364750691">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2471" y="127" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617364231052" />
+    <state x="2471" y="127" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617364750691" />
     <state x="493" y="164" key="FileChooserDialogImpl" timestamp="1617350286613">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -345,10 +361,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2722" y="433" key="Github.ShareDialog/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617194902615" />
-    <state x="2629" y="354" key="NewPhpClassDialog" timestamp="1617356009299">
+    <state x="2629" y="354" key="NewPhpClassDialog" timestamp="1617781770390">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2629" y="354" key="NewPhpClassDialog/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617356009299" />
+    <state x="2629" y="354" key="NewPhpClassDialog/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617781770390" />
     <state x="2714" y="463" key="NewPhpFileDialog" timestamp="1617013263214">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -362,15 +378,15 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="254" height="198" key="ShowFilterAction_Filter_Popup/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617354249436" />
-    <state x="2472" y="273" key="Vcs.Push.Dialog.v2" timestamp="1617364236374">
+    <state x="2472" y="273" key="Vcs.Push.Dialog.v2" timestamp="1617364757760">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2472" y="273" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617364236374" />
-    <state x="2432" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1617170005641">
+    <state x="2472" y="273" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617364757760" />
+    <state x="2432" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1617784279712">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="341" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1920.1080@0.0.1280.680" timestamp="1617010002782" />
-    <state x="2432" y="260" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617170005641" />
+    <state x="2432" y="260" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617784279712" />
     <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1617354249436">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
