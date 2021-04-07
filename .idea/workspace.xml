@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84836a64-07ce-456b-9b4b-040db663bc68" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form_Logger.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form_Updater.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form_Updater.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form_Logger.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form_Logger.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form_Shortcode.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form_Shortcode.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +108,7 @@
       <workItem from="1617193294287" duration="2606000" />
       <workItem from="1617348128843" duration="13320000" />
       <workItem from="1617781602294" duration="2634000" />
-      <workItem from="1617784279569" duration="1145000" />
+      <workItem from="1617784279569" duration="4204000" />
     </task>
     <task id="LOCAL-00001" summary="first good OOP implementation with correct sending email">
       <created>1615805246790</created>
@@ -293,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617364751607</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="add log file handle">
+      <created>1617785451699</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1617785451699</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +343,8 @@
     <MESSAGE value="correct main plufin comment" />
     <MESSAGE value="introduce interface" />
     <MESSAGE value="add final class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add final class" />
+    <MESSAGE value="add log file handle" />
+    <option name="LAST_COMMIT_MESSAGE" value="add log file handle" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="198" key="#Log_Highlighting_(ideolog)" timestamp="1617784308783">
@@ -348,10 +355,14 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="1920" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617195806015" />
-    <state x="2471" y="127" key="CommitChangelistDialog2" timestamp="1617364750691">
+    <state x="2610" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617787035324">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2471" y="127" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617364750691" />
+    <state x="2610" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617787035324" />
+    <state x="2471" y="127" key="CommitChangelistDialog2" timestamp="1617785450222">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2471" y="127" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617785450222" />
     <state x="493" y="164" key="FileChooserDialogImpl" timestamp="1617350286613">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -378,10 +389,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="254" height="198" key="ShowFilterAction_Filter_Popup/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617354249436" />
-    <state x="2472" y="273" key="Vcs.Push.Dialog.v2" timestamp="1617364757760">
+    <state x="2472" y="273" key="Vcs.Push.Dialog.v2" timestamp="1617788690620">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2472" y="273" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617364757760" />
+    <state x="2472" y="273" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617788690620" />
     <state x="2432" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1617784279712">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>

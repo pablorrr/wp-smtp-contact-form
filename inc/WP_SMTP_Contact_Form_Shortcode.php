@@ -5,6 +5,7 @@ namespace Inc;
 
 use Controller\WP_SMTP_Contact_Form_Controller;
 
+
 class WP_SMTP_Contact_Form_Shortcode
 {
     /**
@@ -46,6 +47,7 @@ class WP_SMTP_Contact_Form_Shortcode
     /**
      * @param $atts
      * @return string
+     * @throws \Exception
      */
     public function contact_form()
     {//todo :: reg exp to validate fields
@@ -53,6 +55,12 @@ class WP_SMTP_Contact_Form_Shortcode
         //todo:: relocate form to view folder
         //todo; action attr put valu request global -  check php manual
         $plugin_basename = plugin_basename(__FILE__);
+
+        //example how to use app dev log to debug
+        //  $logger = WP_SMTP_Contact_Form_Logger::instance();
+        //  $logger->WP_SMTP_CF_log($plugin_basename);
+
+
         if (isset($_POST['swpsmtpcf_form_front_submit']) &&
             check_admin_referer($plugin_basename, 'swpsmtpcf_nonce_name')) {
             require_once(WP_SMTP_Contact_Form_Controller::path_form('front-end-form.php'));

@@ -45,8 +45,10 @@ class WP_SMTP_Contact_Form_Logger
      * @param $message
      * @throws Exception
      *
+     * example- how to use it in code to debug(remeber be sure hook was run before check file!!!)
+     * $logger = WP_SMTP_Contact_Form_Logger::instance();
+     * $logger->WP_SMTP_CF_log($plugin_basename);
      */
-
     public function WP_SMTP_CF_log($message)
     {
 
@@ -59,17 +61,21 @@ class WP_SMTP_Contact_Form_Logger
             if (is_array($message) || is_object($message)) {
                 $message = print_r($message, TRUE);
             }
+            if (is_string($message)) {
+                echo $message;
+            }
 
             $log_line = "$time\t{$message}\n";
 
             if (!file_put_contents($file_path, $log_line, FILE_APPEND)) {
-                throw new Exception("Plik dziennika '{$file_path}' nie może zostać otwary ani utworzony. Sprawdź uprawnienia.");
+                throw new Exception("Log file '{$file_path}' cannot be opened or created. Check permissions.");
             }
         }
     }
 
     /**
      * @throws Exception
+     * make dump all executable queries during refresh plugin page
      */
     public function WP_SMTP_CF_query_logger()
     {
@@ -100,7 +106,7 @@ class WP_SMTP_Contact_Form_Logger
             $content = $label . "\n\n" . implode("\n\n", $dump) . "\n\n" . $footer . "\n\n";
 
             if (!file_put_contents($file_path, $content, FILE_APPEND)) {
-                throw new Exception("Plik dziennika '{$file_path}' nie może zostać otwary ani utworzony. Sprawdź uprawnienia.");
+                throw new Exception("Log file '{$file_path}' cannot be opened or created. Check permissions.");
             }
         }
     }
