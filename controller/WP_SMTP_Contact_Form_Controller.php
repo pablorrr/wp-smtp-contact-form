@@ -4,6 +4,7 @@ namespace Controller;
 
 
 use Inc\WP_SMTP_Contact_Form_Help_Tab;
+use Inc\WP_SMTP_Contact_Form_WP_Cron;
 use Model\WP_SMTP_Contact_Form_Model;
 use PHPMailer\PHPMailer\PHPMailer;
 
@@ -37,9 +38,12 @@ final class WP_SMTP_Contact_Form_Controller implements WP_SMTP_CF
      */
 
     public function __construct()
-    {
-        register_uninstall_hook(plugin_basename(__FILE__), array($this, 'swpsmtpcf_send_uninstall'));
-        register_activation_hook(plugin_basename(__FILE__), array($this, 'swpsmtpcf_run_on_activate'));
+    {//todo: test register functions:uninstal,activation,deactivation
+        //todo:fix cron
+        WP_SMTP_Contact_Form_WP_Cron::instance();
+        register_uninstall_hook(plugin_basename(__FILE__), [$this, 'swpsmtpcf_send_uninstall']);
+        register_activation_hook(plugin_basename(__FILE__), [$this, 'swpsmtpcf_run_on_activate']);
+        register_deactivation_hook(plugin_basename(__FILE__), [$this, 'swpsmtpcf_run_on_deactivate']);
         add_filter('plugin_action_links_' . self::swpsmtpcf_return_plug_name(), array($this, 'swpsmtpcf_plugin_action_links'), 10, 2);
         add_action('phpmailer_init', array($this, 'swpsmtpcf_init_smtp'));
         add_action('admin_menu', array($this, 'swpsmtpcf_admin_default_setup'));
@@ -50,10 +54,15 @@ final class WP_SMTP_Contact_Form_Controller implements WP_SMTP_CF
 
     public function swpsmtpcf_run_on_activate()
     {
-        if (!wp_next_scheduled('edu_cron_job')) {
-            wp_schedule_event(time(), 'every15sec', 'edu_cron_job');
+        if (!wp_next_scheduled('wpsmtpcf_cron_job')) {
+            wp_schedule_event(time(), 'everyhour', 'wpsmtpcf_cron_job');
         }
 
+    }
+
+    public function swpsmtpcf_run_on_deactivate()
+    {
+        wp_clear_scheduled_hook('wpsmtpcf_cron_job');
     }
 
     private static function swpsmtpcf_return_plug_name()

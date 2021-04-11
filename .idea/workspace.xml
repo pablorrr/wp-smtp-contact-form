@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84836a64-07ce-456b-9b4b-040db663bc68" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form_WP_Cron.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/WP_SMTP_Contact_Form_Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/WP_SMTP_Contact_Form_Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form_Logger.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form_Logger.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form_WP_Cron.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form_WP_Cron.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-smtp-contact-form.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-smtp-contact-form.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,20 +64,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="LOG" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\nonmulti\wp-content\plugins" />
+      <recent name="C:\wamp64\www\nonmulti\wp-content\plugins\wp-smtp-contact-form" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\nonmulti\wp-content\plugins\wp-smtp-contact-form\inc\logs" />
       <recent name="C:\wamp64\www\nonmulti\wp-content\plugins\wp-smtp-contact-form\inc\forms" />
       <recent name="C:\wamp64\www\nonmulti\wp-content\plugins\wp-smtp-contact-form\inc" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\nonmulti\wp-content\plugins\wp-smtp-contact-form" />
-      <recent name="C:\wamp64\www\nonmulti\wp-content\plugins" />
     </key>
   </component>
   <component name="SearchEverywhereConfiguration">
@@ -112,7 +113,10 @@
       <workItem from="1617193294287" duration="2606000" />
       <workItem from="1617348128843" duration="13320000" />
       <workItem from="1617781602294" duration="2634000" />
-      <workItem from="1617784279569" duration="11242000" />
+      <workItem from="1617784279569" duration="11613000" />
+      <workItem from="1617825626548" duration="5450000" />
+      <workItem from="1618036211774" duration="629000" />
+      <workItem from="1618127716425" duration="5180000" />
     </task>
     <task id="LOCAL-00001" summary="first good OOP implementation with correct sending email">
       <created>1615805246790</created>
@@ -317,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617790933299</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="add cron failed">
+      <created>1617797003381</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1617797003381</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +348,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="correct add action link in procedural way" />
     <MESSAGE value="first good action link impl" />
     <MESSAGE value="action link in OOP correct" />
     <MESSAGE value="skeleton for controller and model classes" />
@@ -362,13 +372,18 @@
     <MESSAGE value="add log file handle" />
     <MESSAGE value="succesfull testing how to use app-dev.log via var name as arg" />
     <MESSAGE value="logg correction" />
-    <option name="LAST_COMMIT_MESSAGE" value="logg correction" />
+    <MESSAGE value="add cron failed" />
+    <option name="LAST_COMMIT_MESSAGE" value="add cron failed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="198" key="#Log_Highlighting_(ideolog)" timestamp="1617784308783">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2472" y="198" key="#Log_Highlighting_(ideolog)/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617784308783" />
+    <state x="442" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617826608186">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="442" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1360.728@0.0.1360.728" timestamp="1617826608186" />
     <state x="1920" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1617195806015">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -377,10 +392,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2610" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617787035324" />
-    <state x="2471" y="127" key="CommitChangelistDialog2" timestamp="1617790932506">
+    <state x="2471" y="127" key="CommitChangelistDialog2" timestamp="1617797002388">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2471" y="127" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617790932506" />
+    <state x="2471" y="127" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617797002388" />
     <state x="493" y="164" key="FileChooserDialogImpl" timestamp="1617350286613">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -407,15 +422,16 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="254" height="198" key="ShowFilterAction_Filter_Popup/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617354249436" />
-    <state x="2472" y="273" key="Vcs.Push.Dialog.v2" timestamp="1617790940045">
+    <state x="2472" y="273" key="Vcs.Push.Dialog.v2" timestamp="1617797011508">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2472" y="273" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617790940045" />
-    <state x="2432" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1617784279712">
+    <state x="2472" y="273" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617797011508" />
+    <state x="2432" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1618036227313">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="341" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1920.1080@0.0.1280.680" timestamp="1617010002782" />
-    <state x="2432" y="260" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617784279712" />
+    <state x="2432" y="260" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1618036227313" />
+    <state x="363" y="175" key="com.intellij.ide.util.TipDialog/0.0.1360.728@0.0.1360.728" timestamp="1617825627007" />
     <state x="2543" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1617354249436">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>

@@ -31,39 +31,35 @@ class WP_SMTP_Contact_Form_WP_Cron
     public function __construct()
     {
         self::$dir_sep = DIRECTORY_SEPARATOR;
-        add_action('edu_cron_job', [$this, 'edu_wpcron_log']);
-        add_filter('cron_schedules', [$this, 'edu_wpcron_every15sec']);
-
-
+        add_action('wpsmtpcf_cron_job', [$this, 'wpsmtpcf_wpcron_log']);
+        add_filter('cron_schedules', [$this, 'wpsmtpcf_wpcron_everyhour']);
     }
 
-    public function edu_wpcron_log()
-    {//todo:: clrear content of a file  instead delete it
-
-        $file_name = 'app_dev.log';
-        $file_path = __DIR__ . self::$dir_sep . 'logs' . self::$dir_sep . $file_name;
-
-
-        $fp = fopen($file_path, "r+");
-// clear content to 0 bits
-        ftruncate($fp, 0);
-//close file
-        fclose($fp);
-        // unlink($file_path);
-    }
-
-    public function edu_wpcron_every15sec($schedules)
+    public function clear_file($file_name)
     {
+        $file_path = __DIR__ . self::$dir_sep . 'logs' . self::$dir_sep . $file_name;
+        $fp = fopen($file_path, "r+");
+        // clear content to 0 bits
+        ftruncate($fp, 0);
+        //close file
+        fclose($fp);
+    }
 
-        $schedules['every15sec'] = array(
+
+    public function wpsmtpcf_wpcron_log()
+    {
+        $this->clear_file('app_dev.log');
+        $this->clear_file('sql_dump.log');
+    }
+
+    public function wpsmtpcf_wpcron_everyhour($schedules)
+    {
+        $schedules['everyhour'] = array(
             'interval' => 15,
-            'display' => 'Raz na 15 sec'
+            'display' => 'one per hour'
         );
 
         return $schedules;
 
     }
-
-
-
 }

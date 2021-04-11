@@ -58,13 +58,8 @@ class WP_SMTP_Contact_Form_Logger
     {
 
         if (defined('WP_DEBUG') && WP_DEBUG) {
-
-
             $file_path = __DIR__ . self::$dir_sep . 'logs/app_dev.log';
-
-
             $time = date('Y-m-d H:i:s');
-
             if (is_array($message) || is_object($message)) {
                 $message = print_r($message, TRUE);
             }

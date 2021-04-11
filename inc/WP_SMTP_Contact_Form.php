@@ -17,8 +17,8 @@ if (!class_exists('WP_SMTP_Contact_Form')):
          */
 
         private static $_instance;
-
         private $controller;
+
 
         public static function instance(): WP_SMTP_Contact_Form
         {
@@ -50,10 +50,11 @@ if (!class_exists('WP_SMTP_Contact_Form')):
 
         public function init()
         {
+           // WP_SMTP_Contact_Form_WP_Cron::instance();
             $this->controller = new WP_SMTP_Contact_Form_Controller();
             WP_SMTP_Contact_Form_Shortcode::instance();
             WP_SMTP_Contact_Form_Logger::instance();
-            WP_SMTP_Contact_Form_WP_Cron::instance();
+
         }
 
 
