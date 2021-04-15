@@ -148,8 +148,9 @@ final class WP_SMTP_Contact_Form_Controller implements WP_SMTP_CF
         /* If we're using smtp auth, set the username & password */
         if ('yes' == $swpsmtpcf_options['smtpcf_settings']['autentication']) {
             $phpmailer->SMTPAuth = true;
-            $phpmailer->Username = $this->swpsmtpcf_get_user_name();
-            $phpmailer->Password = $this->swpsmtpcf_get_password();
+            $swpsmtpcf_options = get_option('swpsmtpcf_options');
+            $phpmailer->Username = $this->swpsmtpcf_get_DB_field($swpsmtpcf_options['smtpcf_settings']['username']);
+            $phpmailer->Password = $this->swpsmtpcf_get_DB_field($swpsmtpcf_options['smtpcf_settings']['password']);
         }
         //PHPMailer 5.2.10 introduced this option. However, this might cause issues if the server is advertising TLS with an invalid certificate.
         $phpmailer->SMTPAutoTLS = false;
@@ -213,8 +214,9 @@ final class WP_SMTP_Contact_Form_Controller implements WP_SMTP_CF
             /* If using smtp auth, set the username & password */
             if ('yes' == $swpsmtpcf_options['smtpcf_settings']['autentication']) {
                 $mail->SMTPAuth = true;
-                $mail->Username = $this->swpsmtpcf_get_user_name();
-                $mail->Password = $this->swpsmtpcf_get_password();
+                $swpsmtpcf_options = get_option('swpsmtpcf_options');
+                $mail->Username = $this->swpsmtpcf_get_DB_field($swpsmtpcf_options['smtpcf_settings']['username']);
+                $mail->Password = $this->swpsmtpcf_get_DB_field($swpsmtpcf_options['smtpcf_settings']['password']);
             }
 
             /* Set the SMTPSecure value, if set to none, leave this blank */
@@ -272,54 +274,33 @@ final class WP_SMTP_Contact_Form_Controller implements WP_SMTP_CF
     }
 
     /**
+     * @param array $swpsmtpcf_opt
      * @return false|mixed|string
+     * get decrypted  username and password depends on parameter
      */
 
-    public function swpsmtpcf_get_password()
+    public function swpsmtpcf_get_DB_field(&$swpsmtpcf_opt = [])
     {
-        $swpsmtpcf_options = get_option('swpsmtpcf_options');
-        $temp_password = $swpsmtpcf_options['smtpcf_settings']['password'];
-        $password = "";
-        $decoded_pass = base64_decode($temp_password);
+        // $swpsmtpcf_options = get_option('swpsmtpcf_options');
+        // $temp_password = $swpsmtpcf_options['smtpcf_settings']['password'];
+        $temp_DB_field = $swpsmtpcf_opt;
+        $DB_field = "";
+        $decoded_DB_field = base64_decode($temp_DB_field);
         /* no additional checks for servers that aren't configured with mbstring enabled */
         if (!function_exists('mb_detect_encoding')) {
-            return $decoded_pass;
+            return $decoded_DB_field;
         }
         /* end of mbstring check */
-        if (base64_encode($decoded_pass) === $temp_password) {  //it might be encoded
-            if (false === mb_detect_encoding($decoded_pass)) {  //could not find character encoding.
-                $password = $temp_password;
+        if (base64_encode($decoded_DB_field) === $temp_DB_field) {  //it might be encoded
+            if (false === mb_detect_encoding($decoded_DB_field)) {  //could not find character encoding.
+                $DB_field = $temp_DB_field;
             } else {
-                $password = base64_decode($temp_password);
+                $DB_field = base64_decode($temp_DB_field);
             }
         } else { //not encoded
-            $password = $temp_password;
+            $DB_field = $temp_DB_field;
         }
-        return $password;
-    }
-
-
-    public function swpsmtpcf_get_user_name()
-    {
-        $swpsmtpcf_options = get_option('swpsmtpcf_options');
-        $temp_username = $swpsmtpcf_options['smtpcf_settings']['username'];
-        $username = "";
-        $decoded_username = base64_decode($temp_username);
-        /* no additional checks for servers that aren't configured with mbstring enabled */
-        if (!function_exists('mb_detect_encoding')) {
-            return $decoded_username;
-        }
-        /* end of mbstring check */
-        if (base64_encode($decoded_username) === $temp_username) {  //it might be encoded
-            if (false === mb_detect_encoding($decoded_username)) {  //could not find character encoding.
-                $username = $temp_username;
-            } else {
-                $username = base64_decode($temp_username);
-            }
-        } else { //not encoded
-            $username = $temp_username;
-        }
-        return $username;
+        return $DB_field;
     }
 
 

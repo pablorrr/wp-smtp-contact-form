@@ -4,8 +4,6 @@
     <list default="true" id="84836a64-07ce-456b-9b4b-040db663bc68" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/WP_SMTP_Contact_Form_Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/WP_SMTP_Contact_Form_Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form_WP_Cron.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/WP_SMTP_Contact_Form_WP_Cron.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/forms/settings-form.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/forms/settings-form.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/settings-form.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/settings-form.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +103,7 @@
       <workItem from="1618036211774" duration="629000" />
       <workItem from="1618127716425" duration="6052000" />
       <workItem from="1618215012158" duration="2483000" />
-      <workItem from="1618470370501" duration="12089000" />
+      <workItem from="1618470370501" duration="13921000" />
     </task>
     <task id="LOCAL-00001" summary="first good OOP implementation with correct sending email">
       <created>1615805246790</created>
@@ -324,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618133938582</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="finish additional hash ussrrname filed in DB succesfully">
+      <created>1618485156862</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1618485156862</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,7 +349,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="action link in OOP correct" />
     <MESSAGE value="skeleton for controller and model classes" />
     <MESSAGE value="FIRST PROPRER MODEL AND KONTROLLER IMPLENATATION" />
     <MESSAGE value="failed transport code to view" />
@@ -369,7 +373,8 @@
     <MESSAGE value="logg correction" />
     <MESSAGE value="add cron failed" />
     <MESSAGE value="finish cron - failed" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish cron - failed" />
+    <MESSAGE value="finish additional hash ussrrname filed in DB succesfully" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish additional hash ussrrname filed in DB succesfully" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="198" key="#Log_Highlighting_(ideolog)" timestamp="1617784308783">
@@ -388,10 +393,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2610" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617787035324" />
-    <state x="2471" y="127" key="CommitChangelistDialog2" timestamp="1618133936973">
+    <state x="2471" y="127" key="CommitChangelistDialog2" timestamp="1618487171984">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2471" y="127" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1618133936973" />
+    <state x="2471" y="127" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1618487171984" />
     <state x="493" y="164" key="FileChooserDialogImpl" timestamp="1618470963218">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -418,10 +423,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="254" height="198" key="ShowFilterAction_Filter_Popup/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1618217166071" />
-    <state x="2472" y="273" key="Vcs.Push.Dialog.v2" timestamp="1618485089295">
+    <state x="2472" y="273" key="Vcs.Push.Dialog.v2" timestamp="1618485185452">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2472" y="273" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1618485089295" />
+    <state x="2472" y="273" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1080@1920.0.1920.1080" timestamp="1618485185452" />
     <state x="2432" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1618470378837">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>

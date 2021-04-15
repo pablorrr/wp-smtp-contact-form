@@ -106,7 +106,8 @@ ob_start(); ?>
                     <th><?php _e('SMTP username', 'easy_wp_smtp_cf'); ?></th>
                     <td>
                         <input type='text' name='swpsmtpcf_smtp_username'
-                               value='<?php echo $this->swpsmtpcf_get_user_name(); ?>'/><br/>
+                               value='<?php $swpsmtpcf_options = get_option('swpsmtpcf_options');
+                               echo  $this->swpsmtpcf_get_DB_field($swpsmtpcf_options['smtpcf_settings']['username']); ?>'/><br/>
                         <span class="swpsmtpcf_info"><?php _e("The username to login to your mail server", 'easy_wp_smtp_cf'); ?></span>
                     </td>
                 </tr>
@@ -114,7 +115,8 @@ ob_start(); ?>
                     <th><?php _e('SMTP Password', 'easy_wp_smtp_cf'); ?></th>
                     <td>
                         <input type='password' name='swpsmtpcf_smtp_password'
-                               value='<?php echo $this->swpsmtpcf_get_password(); ?>'/><br/>
+                               value='<?php $swpsmtpcf_options = get_option('swpsmtpcf_options');
+                               echo $this->swpsmtpcf_get_DB_field($swpsmtpcf_options['smtpcf_settings']['password']); ?>'/><br/>
                         <span class="swpsmtpcf_info"><?php _e("The password to login to your mail server", 'easy_wp_smtp_cf'); ?></span>
                     </td>
                 </tr>
