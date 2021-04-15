@@ -106,7 +106,7 @@ ob_start(); ?>
                     <th><?php _e('SMTP username', 'easy_wp_smtp_cf'); ?></th>
                     <td>
                         <input type='text' name='swpsmtpcf_smtp_username'
-                               value='<?php echo esc_attr($swpsmtpcf_options['smtpcf_settings']['username']); ?>'/><br/>
+                               value='<?php echo $this->swpsmtpcf_get_user_name(); ?>'/><br/>
                         <span class="swpsmtpcf_info"><?php _e("The username to login to your mail server", 'easy_wp_smtp_cf'); ?></span>
                     </td>
                 </tr>

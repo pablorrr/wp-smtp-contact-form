@@ -148,7 +148,7 @@ final class WP_SMTP_Contact_Form_Controller implements WP_SMTP_CF
         /* If we're using smtp auth, set the username & password */
         if ('yes' == $swpsmtpcf_options['smtpcf_settings']['autentication']) {
             $phpmailer->SMTPAuth = true;
-            $phpmailer->Username = $swpsmtpcf_options['smtpcf_settings']['username'];
+            $phpmailer->Username = $this->swpsmtpcf_get_user_name();
             $phpmailer->Password = $this->swpsmtpcf_get_password();
         }
         //PHPMailer 5.2.10 introduced this option. However, this might cause issues if the server is advertising TLS with an invalid certificate.
@@ -213,7 +213,7 @@ final class WP_SMTP_Contact_Form_Controller implements WP_SMTP_CF
             /* If using smtp auth, set the username & password */
             if ('yes' == $swpsmtpcf_options['smtpcf_settings']['autentication']) {
                 $mail->SMTPAuth = true;
-                $mail->Username = $swpsmtpcf_options['smtpcf_settings']['username'];
+                $mail->Username = $this->swpsmtpcf_get_user_name();
                 $mail->Password = $this->swpsmtpcf_get_password();
             }
 
@@ -296,6 +296,30 @@ final class WP_SMTP_Contact_Form_Controller implements WP_SMTP_CF
             $password = $temp_password;
         }
         return $password;
+    }
+
+
+    public function swpsmtpcf_get_user_name()
+    {
+        $swpsmtpcf_options = get_option('swpsmtpcf_options');
+        $temp_username = $swpsmtpcf_options['smtpcf_settings']['username'];
+        $username = "";
+        $decoded_username = base64_decode($temp_username);
+        /* no additional checks for servers that aren't configured with mbstring enabled */
+        if (!function_exists('mb_detect_encoding')) {
+            return $decoded_username;
+        }
+        /* end of mbstring check */
+        if (base64_encode($decoded_username) === $temp_username) {  //it might be encoded
+            if (false === mb_detect_encoding($decoded_username)) {  //could not find character encoding.
+                $username = $temp_username;
+            } else {
+                $username = base64_decode($temp_username);
+            }
+        } else { //not encoded
+            $username = $temp_username;
+        }
+        return $username;
     }
 
 

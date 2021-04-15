@@ -55,7 +55,7 @@ class WP_SMTP_Contact_Form_WP_Cron
     public function wpsmtpcf_wpcron_everyhour($schedules)
     {
         $schedules['everyhour'] = array(
-            'interval' => 15,
+            'interval' => 15,//15 sec for testing purposes
             'display' => 'one per hour'
         );
 
